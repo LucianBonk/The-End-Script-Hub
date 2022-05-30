@@ -1,0 +1,34 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "The End Script Hub"})
+OrionLib:MakeNotification({
+	Name = "IMPORTANT",
+	Content = "There Will Be LOTS of more scripts for games that me and my friend find.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local List = Window:MakeTab({
+	Name = "List Of Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+List:AddButton({
+	Name = "Bedwars",
+	Callback = function()
+      		print("soon")
+  	end    
+})
+List:AddButton({
+	Name = "AUT",
+	Callback = function()
+      		print("soon")
+  	end    
+})
+List:AddButton({
+	Name = "Jailbreak",
+	Callback = function()
+      		print("soon")
+  	end    
+})
+OrionLib:Init()
+
