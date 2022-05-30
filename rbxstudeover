@@ -1,0 +1,123 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local TheEnd = Instance.new("ScreenGui")
+local Password = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local PasswordBox = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local UseKey = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local GetKey = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local LoadScript = Instance.new("Frame")
+local LoadScript_2 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
+
+--Properties:
+
+TheEnd.Name = "The End"
+TheEnd.Parent = game.Workspace
+TheEnd.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Password.Name = "Password"
+Password.Parent = TheEnd
+Password.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+Password.Position = UDim2.new(0.318111449, 0, 0.146012262, 0)
+Password.Size = UDim2.new(0, 508, 0, 498)
+Password.Draggable = true
+Password.Active = true
+UICorner.Parent = Password
+if PasswordBox.Text == "Test" then
+	Password.Visible = false
+	LoadScript.Visible = true
+end
+PasswordBox.Name = "Password Box"
+PasswordBox.Parent = Password
+PasswordBox.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+PasswordBox.Position = UDim2.new(0, 0, 0.27510041, 0)
+PasswordBox.Size = UDim2.new(0, 508, 0, 116)
+PasswordBox.Font = Enum.Font.SourceSans
+PasswordBox.Text = "Put Password Here!"
+PasswordBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+PasswordBox.TextSize = 14.000
+
+UICorner_2.Parent = PasswordBox
+
+UseKey.Name = "Use Key"
+UseKey.Parent = Password
+UseKey.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+UseKey.Position = UDim2.new(0, 24, 0, 381)
+UseKey.Size = UDim2.new(0, 200, 0, 50)
+UseKey.Font = Enum.Font.SourceSans
+UseKey.TextColor3 = Color3.fromRGB(0, 0, 0)
+UseKey.TextSize = 14.000
+UseKey.Text = "Use Key"
+UICorner_3.Parent = UseKey
+
+GetKey.Name = "Get Key"
+GetKey.Parent = Password
+GetKey.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+GetKey.Position = UDim2.new(0, 277, 0, 381)
+GetKey.Size = UDim2.new(0, 200, 0, 50)
+GetKey.Font = Enum.Font.SourceSans
+GetKey.TextColor3 = Color3.fromRGB(0, 0, 0)
+GetKey.TextSize = 14.000
+GetKey.Text = "Get Key"
+
+
+UICorner_4.Parent = GetKey
+
+TextLabel.Parent = Password
+TextLabel.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+TextLabel.Size = UDim2.new(0, 508, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "The End Made By Lucian (DONT SKID)"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+UICorner_5.Parent = TextLabel
+
+LoadScript.Name = "Load Script"
+LoadScript.Parent = TheEnd
+LoadScript.Active = true
+LoadScript.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+LoadScript.Position = UDim2.new(0, 406, 0, 150)
+LoadScript.Size = UDim2.new(0, 397, 0, 458)
+LoadScript.Visible = false
+LoadScript.Draggable = true
+LoadScript.Active = true
+
+LoadScript_2.Name = "Load Script"
+LoadScript_2.Parent = LoadScript
+LoadScript_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+LoadScript_2.Position = UDim2.new(0, 0, 0, 278)
+LoadScript_2.Size = UDim2.new(0, 397, 0, 180)
+LoadScript_2.Font = Enum.Font.SourceSans
+LoadScript_2.Text = "Load Script"
+LoadScript_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoadScript_2.TextSize = 14.000
+LoadScript_2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LucianBonk/The-End-Script-Hub/main/The%20End%20Script", true))()
+end)
+
+UICorner_6.Parent = LoadScript_2
+
+TextLabel_2.Parent = LoadScript
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_2.Size = UDim2.new(0, 397, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "LOAD SCRIPT CLICK THE BUTTION BELOW"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+UICorner_7.Parent = TextLabel_2
+
+UICorner_8.Parent = LoadScript
